@@ -1,0 +1,69 @@
+/* Design system
+   Cor:        papel #FAFAF8, tinta #14161A, cinza #5B6068, linha #DEDED8, cobalto #1B3FA0 (ação e desenho), ocre #E0A526 (só detalhe)
+   Tipo:       Hanken Grotesk. Escala 14 / 16 / 18 / 22 / 32 / 56 px
+   Espaço:     múltiplos de 8 px
+   Forma:      sem sombras, sem gradientes; linhas de 1 px; raio 4 px */
+:root{
+  --ocre:#E0A526;
+  --papel:#FAFAF8; --tinta:#14161A; --cinza:#5B6068; --linha:#DEDED8; --acento:#1B3FA0;
+  --fonte:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --coluna:44rem; --raio:4px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 1rem/1.65 var(--fonte);-webkit-font-smoothing:antialiased}
+::selection{background:var(--ocre);color:var(--tinta)}
+a{color:var(--acento);text-underline-offset:.2em}
+a:hover{color:var(--tinta)}
+:focus-visible{outline:2px solid var(--acento);outline-offset:3px;border-radius:var(--raio)}
+h1,h2,h3{font-family:var(--fonte);margin:0;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+p{margin:0 0 .75rem}
+.pular{position:absolute;left:-999px;top:0;background:var(--tinta);color:var(--papel);padding:.5rem 1rem}
+.pular:focus{left:1rem;top:1rem;z-index:10}
+
+.topo,.hero,.secao,.rodape{width:min(100% - 3rem,var(--coluna));margin-inline:auto}
+.topo{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+.nome{color:var(--tinta);font-weight:700;text-decoration:none}
+.menu{display:flex;gap:1.5rem;align-items:center}
+.menu a{color:var(--cinza);text-decoration:none;font-size:.95rem}
+.menu a:hover{color:var(--tinta)}
+.idioma{font:600 .8rem var(--fonte);background:none;border:1px solid var(--linha);color:var(--cinza);border-radius:var(--raio);padding:.25rem .6rem;cursor:pointer}
+.idioma:hover{color:var(--tinta);border-color:var(--tinta)}
+
+.hero{padding:4rem 0 0}
+.filete{display:block;width:3rem;height:6px;background:var(--ocre);margin-bottom:1.25rem}
+.skyline{display:block;width:min(100%,31rem);height:auto;margin-top:3.5rem}
+.hero+.secao{border-top:0;padding-top:3rem}
+h1{font-size:clamp(2.5rem,8vw,3.5rem);margin-bottom:1.5rem}
+.lead{font-size:1.125rem;color:var(--cinza);max-width:36rem}
+.acoes{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2rem}
+.botao{display:inline-block;background:var(--acento);color:#fff;padding:.65rem 1.1rem;border-radius:var(--raio);text-decoration:none;font-weight:600;border:1px solid var(--acento)}
+.botao:hover{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.botao-sec{background:transparent;color:var(--tinta);border-color:var(--linha)}
+.botao-sec:hover{background:transparent;color:var(--acento);border-color:var(--acento)}
+
+.secao{padding:3.5rem 0;border-top:1px solid var(--linha)}
+h2{font-size:1.375rem;margin-bottom:2rem}
+.projetos{list-style:none;margin:0;padding:0}
+.projeto{display:grid;grid-template-columns:11rem 1fr;gap:1rem 2rem;padding:1.75rem 0;border-top:1px solid var(--linha);scroll-margin-top:1rem}
+.projeto:first-child{border-top:0;padding-top:0}
+.projeto h3{font-size:1.125rem}
+.tag{display:inline-block;margin:.4rem 0 0;color:var(--cinza);font-size:.875rem}
+.projeto-corpo p{max-width:32rem}
+.stack{color:var(--cinza);font-size:.9rem}
+.nota{color:var(--cinza);font-size:.9rem}
+.sobre p{max-width:34rem}
+.ferramentas{margin:2rem 0 0}
+.ferramentas div{display:grid;grid-template-columns:11rem 1fr;gap:1rem 2rem;padding:.75rem 0;border-top:1px solid var(--linha)}
+.ferramentas dt{font-weight:600}
+.ferramentas dd{margin:0;color:var(--cinza)}
+.contatos{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:.4rem;font-size:1.125rem}
+.rodape{padding:2rem 0 3rem;border-top:1px solid var(--linha);color:var(--cinza);font-size:.9rem}
+.rodape p{margin:0}
+
+@media (max-width:640px){
+  .projeto,.ferramentas div{grid-template-columns:1fr;gap:.25rem}
+  .menu{gap:1rem}
+  .hero{padding:3rem 0 2.5rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

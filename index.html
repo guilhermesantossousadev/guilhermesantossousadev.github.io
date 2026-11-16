@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guilherme Santos | Desenvolvedor full stack</title>
+  <meta name="description" content="Guilherme Santos, desenvolvedor full stack em Belo Horizonte. React, TypeScript e .NET.">
+  <meta property="og:title" content="Guilherme Santos | Desenvolvedor full stack">
+  <meta property="og:description" content="Sistemas completos, da modelagem do banco à tela que alguém usa todo dia.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="pular" href="#projetos" data-en="Skip to projects">Ir para os projetos</a>
+
+  <header class="topo">
+    <a class="nome" href="#inicio">Guilherme Santos</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#projetos" data-en="Projects">Projetos</a>
+      <a href="#sobre" data-en="About">Sobre</a>
+      <a href="#contato" data-en="Contact">Contato</a>
+      <button class="idioma" id="idioma" type="button" aria-label="Mudar idioma / Change language">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <span class="filete" aria-hidden="true"></span>
+      <h1 data-en="Full stack developer.">Desenvolvedor full stack.</h1>
+      <p class="lead" data-en="I build complete systems, from the database model to the screen someone uses every day. Based in Belo Horizonte, working with React, TypeScript and .NET.">Construo sistemas completos, da modelagem do banco à tela que alguém usa todo dia. Em Belo Horizonte, com React, TypeScript e .NET.</p>
+      <p class="acoes">
+        <a class="botao" href="#projetos" data-en="See projects">Ver projetos</a>
+        <a class="botao botao-sec" href="mailto:guilhermessousa.dev@gmail.com" data-en="Get in touch">Entrar em contato</a>
+      </p>
+      <img class="skyline" src="skyline.svg" alt="" width="496" height="180">
+    </section>
+
+    <section class="secao" id="projetos" aria-labelledby="t-projetos">
+      <h2 id="t-projetos" data-en="Projects">Projetos</h2>
+      <ul class="projetos">
+        <li class="projeto" id="fisiofit">
+          <div class="projeto-nome">
+            <h3>Clínica Fisiofit</h3>
+            <p class="tag" data-en="In production">Em produção</p>
+          </div>
+          <div class="projeto-corpo">
+            <p data-en="Management system for a physiotherapy and pilates clinic with more than one location: patients, plans, payments, schedule and locations, plus the clinic's public website.">Sistema de gestão de uma clínica de fisioterapia e pilates com mais de uma unidade: pacientes, planos, pagamentos, agenda e unidades, mais o site institucional.</p>
+            <p data-en="Automated tests in CI, encrypted database backup with restore testing, and care with personal data (LGPD).">Testes automatizados em CI, backup criptografado do banco com teste de restauração e cuidado com dados pessoais (LGPD).</p>
+            <p class="stack">Next.js, TypeScript, PostgreSQL</p>
+            <p class="nota" data-en="Private repository.">Repositório privado.</p>
+          </div>
+        </li>
+        <li class="projeto" id="sweet-home">
+          <div class="projeto-nome">
+            <h3>Sweet Home</h3>
+            <p class="tag" data-en="Portfolio">Portfólio</p>
+          </div>
+          <div class="projeto-corpo">
+            <p data-en="Real estate portal to buy and rent: search with filters, listings with several photos, sign up and login, price estimator, contact with the advertiser and an admin area.">Portal de imóveis para comprar e alugar: busca com filtros, anúncios com várias fotos, cadastro e login, precificador, contato com o anunciante e área do administrador.</p>
+            <p data-en="Vue 3 front end with its own design system and a .NET 10 API on SQLite. Runs locally with one double click.">Front-end em Vue 3 com design system próprio e API em .NET 10 com SQLite. Roda local com dois cliques.</p>
+            <p class="stack">Vue 3, .NET 10, SQLite</p>
+            <p><a href="https://github.com/guilhermesantossousadev/Imobiliaria" data-en="Code on GitHub">Código no GitHub</a></p>
+          </div>
+        </li>
+        <li class="projeto">
+          <div class="projeto-nome"><h3>Life OS</h3></div>
+          <div class="projeto-corpo">
+            <p data-en="Personal app for tasks, schedule, goals, projects, notes and finances. Clean Architecture, authentication, tests and Docker.">App pessoal para tarefas, agenda, metas, projetos, notas e finanças. Clean Architecture, autenticação, testes e Docker.</p>
+            <p class="stack">React 19, TypeScript, ASP.NET Core, PostgreSQL, Supabase</p>
+            <p><a href="https://github.com/guilhermesantossousadev/Life-Os" data-en="Code on GitHub">Código no GitHub</a></p>
+          </div>
+        </li>
+        <li class="projeto">
+          <div class="projeto-nome"><h3>Jana Modas</h3></div>
+          <div class="projeto-corpo">
+            <p data-en="Mini ERP for a clothing store: customers, stock by size grid, sales and cash flow.">Mini-ERP de uma loja de roupas: clientes, estoque por grade, vendas e fluxo de caixa.</p>
+            <p class="stack">Next.js, TypeScript, Supabase</p>
+            <p><a href="https://jana-modas-system.vercel.app" data-en="Live demo">Demo</a> · <a href="https://github.com/guilhermesantossousadev/JanaModasSystem" data-en="Code on GitHub">Código no GitHub</a></p>
+          </div>
+        </li>
+        <li class="projeto">
+          <div class="projeto-nome"><h3 data-en="NIC Labs automations">Automações NIC Labs</h3></div>
+          <div class="projeto-corpo">
+            <p data-en="Schedule flows, capacity management and document processing.">Fluxos de agenda, gestão de capacidade e processamento de documentos.</p>
+            <p class="stack">n8n, Google Apps Script, Node.js, OpenAI</p>
+            <p class="nota" data-en="Private repository.">Repositório privado.</p>
+          </div>
+        </li>
+        <li class="projeto">
+          <div class="projeto-nome"><h3>JuniorDevAssessment</h3></div>
+          <div class="projeto-corpo">
+            <p data-en="Technical assessment: API, persistence and front end integration.">Avaliação técnica: API, persistência e integração com o front.</p>
+            <p class="stack">.NET, SQLite, Vue</p>
+            <p><a href="https://github.com/guilhermesantossousadev/JuniorDevAssessment" data-en="Code on GitHub">Código no GitHub</a></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="secao" id="sobre" aria-labelledby="t-sobre">
+      <h2 id="t-sobre" data-en="About">Sobre</h2>
+      <div class="sobre">
+        <p data-en="I like projects with real users, because that is where architecture, tests and documentation stop being theory. I work as a development intern at NIC Labs and study software engineering in Belo Horizonte.">Gosto de projetos com usuários reais, porque é aí que arquitetura, testes e documentação deixam de ser teoria. Sou estagiário de desenvolvimento na NIC Labs e estudo engenharia de software em Belo Horizonte.</p>
+        <p data-en="Outside work, I take part in an extension project on digital inclusion and technology education for young people.">Fora do trabalho, participo de um projeto de extensão sobre inclusão digital e educação em tecnologia para jovens.</p>
+      </div>
+      <dl class="ferramentas">
+        <div><dt>Front-end</dt><dd>React, TypeScript, Vue, Vite, HTML, CSS</dd></div>
+        <div><dt>Back-end</dt><dd>C# e ASP.NET Core, Java e Spring Boot, Node.js, Python</dd></div>
+        <div><dt data-en="Data and infrastructure">Dados e infraestrutura</dt><dd>PostgreSQL, MySQL, SQLite, Supabase, Docker, GitHub Actions</dd></div>
+        <div><dt data-en="Automation">Automação</dt><dd data-en="n8n, Google Apps Script, API integrations, Discord bots">n8n, Google Apps Script, integrações com APIs, bots do Discord</dd></div>
+      </dl>
+    </section>
+
+    <section class="secao" id="contato" aria-labelledby="t-contato">
+      <h2 id="t-contato" data-en="Contact">Contato</h2>
+      <p class="lead" data-en="Open to opportunities and to projects with real users.">Aberto a oportunidades e a projetos com usuários reais.</p>
+      <ul class="contatos">
+        <li><a href="mailto:guilhermessousa.dev@gmail.com">guilhermessousa.dev@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/guilherme-santos-sousa-dev">LinkedIn</a></li>
+        <li><a href="https://github.com/guilhermesantossousadev">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p data-en="Guilherme Santos · Belo Horizonte, Brazil">Guilherme Santos · Belo Horizonte, MG</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
